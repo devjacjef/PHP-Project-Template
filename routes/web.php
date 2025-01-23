@@ -24,7 +24,8 @@ $routes = [
  * @param int $code the response code to display on the error page.
  * @return never Don't return anything.
  */
-function abort($code) {
+function abort($code)
+{
     http_response_code($code);
 
     require 'resources/views/error.php';
@@ -38,12 +39,12 @@ function abort($code) {
  * @param array{string, string} $routes An associative array of routes.
  * @return string|void Returns the route to be processed or redirects to an error page.
  */
-function routeToController($uri, $routes) {
-    if(array_key_exists($uri, $routes)){
+function routeToController($uri, $routes)
+{
+    if (array_key_exists($uri, $routes)) {
         require $routes[$uri];
     } else {
         abort(404);
         return;
     }
 }
-
