@@ -1,15 +1,11 @@
-<FilesMatch "\.php$">
-    Order Allow,Deny
-    Deny from all
-</FilesMatch>
+# TODO Learn about .htaccess files.
 
-<Files "index.php">
-    Order Allow,Deny
-    Allow from all
-</Files>
-
-# Route all requests through index.php
 RewriteEngine On
+
+# Redirect root URL (/) to public/index.php
+RewriteRule ^$ public/index.php [L]
+
+# Route all requests to public/index.php (fallback for non-existing files/directories)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [L]
+RewriteRule ^(.*)$ public/index.php [L]

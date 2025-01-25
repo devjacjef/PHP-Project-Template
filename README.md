@@ -12,6 +12,7 @@ This template is just a basic example of a 'well-structured' plain PHP project. 
 
 - `app/` - Core code of the application.
     - `app/Controllers` - Handles requests and responses.
+    - `app/Core` - Contains core components for the App.
     - `app/Models` - Structures data.
 - `config` - configuration files.
 - `docs` - Documentation files.
