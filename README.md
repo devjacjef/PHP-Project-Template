@@ -5,6 +5,7 @@
 ## README.md
 
 This template is just a basic example of a 'well-structured' plain PHP project. At the time of writing this, I do not plan to use any dependencies/frameworks as I want to better engage with the language.
+The purpose of this project is to demonstrate a good grasp of different subjects within Web Development.
 
 **Code should be commented to show a good grasp of the subject and an overall understanding of what I am making.**
 
