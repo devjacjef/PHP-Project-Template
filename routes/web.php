@@ -10,6 +10,7 @@ ini_set('display_errors', 0);
 $uri = rtrim(parse_url($_SERVER['REQUEST_URI'])['path']);
 
 $projectPrefix = '/learing-php';
+
 if (strpos($uri, $projectPrefix) === 0) {
     $uri = substr($uri, strlen($projectPrefix));
     if ($uri === '') $uri = '/';
@@ -24,7 +25,7 @@ if (strpos($uri, $projectPrefix) === 0) {
 $routes = [
     '/' => __DIR__ . '/../resources/views/home.php',
     // TODO Find a better fix for this to be honest...
-    '/learing-php/' => __DIR__ . '/../resources/views/home.php',
+    $projectPrefix => __DIR__ . '/../resources/views/home.php',
     '/about' => __DIR__ . '/../resources/views/about.php',
 ];
 
