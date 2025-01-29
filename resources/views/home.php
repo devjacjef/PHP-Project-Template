@@ -1,12 +1,13 @@
 <?php
 
-echo 'Hello world!'
+echo 'Hello world!';
 
-?>
+include 'components/navigation.php';
 
-<nav>
-    <ul>
-        <li><a href="/learing-php/about">About</a></li>
-    </ul>
-</nav>
+require_once __DIR__ . '/../../app/Core/Database.php';
 
+use App\Core\Database;
+
+$db = new Database();
+
+var_dump($db->connect());
