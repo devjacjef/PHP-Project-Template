@@ -1,13 +1,12 @@
-# Jack's PHP Project Template
+# devjacjef
 
 *God, hell must really have frozen over for Jack to be coding in PHP.*
 
 ## README.md
 
-This template is just a basic example of a 'well-structured' plain PHP project. At the time of writing this, I do not plan to use any dependencies/frameworks as I want to better engage with the language.
-The purpose of this project is to demonstrate a good grasp of different subjects within Web Development.
+This is the code for my own personal website. I've allowed the code to be public on GitHub for anyone curious as to how I built my own website. Currently, I am only using features revealed to me by the standard PHP language and do not have plans to implement any third party dependencies. The goal is to better engage with PHP with the aspiration of becoming a backend developer.
 
-**Code should be commented to show a good grasp of the subject and an overall understanding of what I am making.**
+**Code should be commented as to help understand what I have implemented**.
 
 ## Directory Structure
 
@@ -28,5 +27,8 @@ The purpose of this project is to demonstrate a good grasp of different subjects
 
 ## References
 
+This is a few resources I looked at when designing this project.
+
 PHP Directory Structure Skeleton - https://github.com/php-pds/skeleton
-Laravel Directory Structure - https://laravel.com/docs/11.x/structure  
+Laravel Directory Structure - https://laravel.com/docs/11.x/structure
+Laravel Database Documentation - https://laravel.com/docs/11.x/database
