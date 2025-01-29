@@ -23,8 +23,8 @@ if (strpos($uri, $projectPrefix) === 0) {
  * @var array{route: string, path: string } Routes defined for the application.
  */
 $routes = [
-    '/' => __DIR__ . '/../resources/views/home.php',
-    '/about' => __DIR__ . '/../resources/views/about.php',
+    '/' => __DIR__ . '/../resources/views/about.php',
+    '/projects' => __DIR__ . '/../resources/views/projects.php',
     '/test' => __DIR__ . '/../resources/views/test.php'
 ];
 

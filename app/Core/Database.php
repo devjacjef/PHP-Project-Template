@@ -19,6 +19,11 @@ class Database
      */
     public static function connect()
     {
+        // If there is already a connection, return early.
+        if(self::$conn != null) {
+            return;
+        }
+
         try {
             require_once __DIR__ . '/../../config/config.php';
 
