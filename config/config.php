@@ -9,3 +9,6 @@
 require_once 'config-db.php';
 
 $dsn = PREFIX . ':' . DB_HOST . ';' . DB_PORT . ';' . DB_NAME;
+
+$user = $username;
+$pass = $password;

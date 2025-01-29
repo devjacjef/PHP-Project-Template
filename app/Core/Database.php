@@ -23,8 +23,8 @@ class Database
 
             $this->$dbh = new PDO(
                 $dsn,
-                'root',
-                '',
+                $user,
+                $pass,
                 array(
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_PERSISTENT => true
@@ -33,7 +33,7 @@ class Database
 
             return true;
         } catch (PDOException $e) {
-            error_log("Database connection failed: " . $e->getMessage());
+            echo "Database connection failed: " . $e->getMessage();
             return false;
         }
     }
