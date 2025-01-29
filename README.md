@@ -22,6 +22,7 @@ The purpose of this project is to demonstrate a good grasp of different subjects
     - `css` - Contains style sheets.
     - `js` - Contains JavaScript scripts.
     - `views` - Contains views for the project.
+        - `views/components` - Contains components to use for the views in this project.
 - `routes` - Contains defined routes for the application.
 - `tests` - Contains tests.
 
