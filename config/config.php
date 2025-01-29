@@ -8,6 +8,4 @@
  // This has to be implemented by the developer.
 require_once 'config-db.php';
 
-$username = User;
-$password = Pass;
-$host = Host;
+$dsn = PREFIX . ':' . DB_HOST . ';' . DB_PORT . ';' . DB_NAME;

@@ -1,3 +1,3 @@
 # Index File
 
-<!--TODO Begin working on docs for the project.-->
+This is the index page for the docs directory.
