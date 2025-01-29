@@ -72,22 +72,16 @@ class Database
         return false;
     }
 
-    public static function update(string $sql, ?array $params = null) {
+    public static function update(string $sql, ?array $params = null) {}
 
-    }
-
-    public static function delete(string $sql, ?array $params = null) {
-
-    }
+    public static function delete(string $sql, ?array $params = null) {}
 
     /**
      * Allows the execution of database statement.
      * @param string $sql The statement to be executed.
      * @return void Does not return anything.
      */
-    public static function statement(string $sql) {
-
-    }
+    public static function statement(string $sql) {}
 
     /**
      * Allows for the developer to execute unprepared statements.
@@ -95,9 +89,7 @@ class Database
      * @param string $sql
      * @return void
      */
-    public static function unprepared(string $sql) {
-
-    }
+    public static function unprepared(string $sql) {}
 
     // TODO Implement executing queries.
 }

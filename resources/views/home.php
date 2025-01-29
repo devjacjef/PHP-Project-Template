@@ -7,14 +7,4 @@ echo 'Hello world!';
 
 include 'components/navigation.php';
 
-require_once __DIR__ . '/../../app/Core/Database.php';
-
-use App\Core\Database;
-
-Database::connect();
-
-var_dump(Database::select("SELECT * FROM cheese"));
-
-Database::insert("INSERT INTO cheese(name) values (?)", ['hi again!']);
-
 ?>
