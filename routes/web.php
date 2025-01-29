@@ -25,6 +25,7 @@ if (strpos($uri, $projectPrefix) === 0) {
 $routes = [
     '/' => __DIR__ . '/../resources/views/home.php',
     '/about' => __DIR__ . '/../resources/views/about.php',
+    '/test' => __DIR__ . '/../resources/views/test.php'
 ];
 
 /**
