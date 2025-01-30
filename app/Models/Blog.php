@@ -10,6 +10,7 @@ class Blog {
     private string $subtitle;
     private string $image;
     private string $content;
+    private array $tags = [];
     private DateTime $createdAt;
     private DateTime $lastUpdated;
 }
