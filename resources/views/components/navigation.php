@@ -15,6 +15,6 @@ echo '<br>';
         <li><a href="/">About</a></li>
         <li><a href="/blogs">Blog</a></li>
         <li><a href="/projects">Projects</a></li>
-        <li><a href="#">Resumé</a></li>
+        <li><a href="/resume">Resumé</a></li>
     </ul>
 </nav>

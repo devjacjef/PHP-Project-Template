@@ -26,7 +26,8 @@ $routes = [
     '/' => __DIR__ . '/../resources/views/about.php',
     '/projects' => __DIR__ . '/../resources/views/projects.php',
     '/blogs' => __DIR__ . '/../resources/views/blogs.php',
-    '/test' => __DIR__ . '/../resources/views/test.php'
+    '/test' => __DIR__ . '/../resources/views/test.php',
+    '/resume' => __DIR__ . '/../resources/views/resume.php'
 ];
 
 /**
