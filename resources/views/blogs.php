@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$title = "Home page!";
+$title = "Jack's Blogs";
 
 require_once 'components/header.php';
 
@@ -14,14 +14,14 @@ use App\Core\Database;
 
 $message = '';
 
-$projects = Database::select("SELECT * FROM projects");
+$blogs = Database::select("SELECT * FROM blogs");
 
-if (sizeof($projects) === 0) {
-    $message = "Currently there are no projects...";
+if (sizeof($blogs) === 0) {
+    $message = "Currently there are no blogs...";
 }
 ?>
 
-<h1>Projects</h1>
+<h1>Blogs</h1>
 <h2><?php echo $message ?></h2>
 
 <?php
