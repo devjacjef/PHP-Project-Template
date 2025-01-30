@@ -12,18 +12,15 @@ class Database
 {
     // Connection to database server 
     private static ?PDO $conn = null;
+    // Object Instance
+    private static ?Database $instance = null;
 
     /**
      * Connect to the database.
-     * @return void
+     * @return PDO|null
      */
-    public static function connect()
+    private function __construct()
     {
-        // If there is already a connection, return early.
-        if(self::$conn != null) {
-            return;
-        }
-
         try {
             require_once __DIR__ . '/../../config/config.php';
 
@@ -41,9 +38,21 @@ class Database
         }
     }
 
+    public static function getInstance(): Database
+    {
+        if (self::$instance === null) {
+            self::$instance = new Database();
+        }
+        return self::$instance;
+    }
+
     // TODO Implement the params.
     public static function select(string $sql, ?array $params = null): array
     {
+        if (self::$conn === null) {
+            self::getInstance();
+        }
+
         try {
             $stmt = self::$conn->query($sql);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -53,20 +62,12 @@ class Database
         return [];
     }
 
-    // Was going to use this as a helper function but may not be needed...
-    // private static function handleParams(?array $params = null)
-    // {
-    //     $p = [];
-
-    //     foreach ($params as $param) {
-    //         $p[] = $param;
-    //     }
-
-    //     return $p;
-    // }
-
     public static function insert(string $sql, ?array $params = null): bool
     {
+        if (self::$conn === null) {
+            self::getInstance();
+        }
+
         try {
             $stmt = self::$conn->prepare($sql);
             return $stmt->execute($params);
@@ -86,7 +87,15 @@ class Database
      * @param string $sql The statement to be executed.
      * @return void Does not return anything.
      */
-    public static function statement(string $sql) {}
+    public static function statement(string $sql)
+    {
+        try {
+            $stmt = self::$conn->prepare($sql);
+            $stmt->execute();
+        } catch (PDOException $e) {
+            error_log("Query failed: " . $e->getMessage());
+        }
+    }
 
     /**
      * Allows for the developer to execute unprepared statements.

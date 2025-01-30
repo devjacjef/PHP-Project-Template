@@ -15,7 +15,6 @@ require_once 'components/header.php';
     use App\Core\Database;
 
     $message = '';
-    Database::connect();
 
     $projects = Database::select("SELECT * FROM projects");
 

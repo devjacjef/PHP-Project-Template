@@ -1,6 +1,7 @@
 # devjacjef
 
-*God, hell must really have frozen over for Jack to be coding in PHP.*
+<!-- *Hell must really have frozen over for Jack to be coding in PHP.* -->
+<!--I'm enjoying PHP?!-->
 
 ## README.md
 
@@ -27,8 +28,9 @@ This is the code for my own personal website. I've allowed the code to be public
 
 ## References
 
-This is a few resources I looked at when designing this project.
+- This is a few resources I looked at when designing this project.
 
-PHP Directory Structure Skeleton - https://github.com/php-pds/skeleton
-Laravel Directory Structure - https://laravel.com/docs/11.x/structure
-Laravel Database Documentation - https://laravel.com/docs/11.x/database
+- PHP Directory Structure Skeleton - https://github.com/php-pds/skeleton
+- Laravel Directory Structure - https://laravel.com/docs/11.x/structure
+- Laravel Database Documentation - https://laravel.com/docs/11.x/database
+- Singleton Design Pattern - https://refactoring.guru/design-patterns/singleton/php/example
