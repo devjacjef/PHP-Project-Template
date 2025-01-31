@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/style.css"/>
 </head>
 <body>
-    <?php 
+    <header>
+    <?php
         require_once 'navigation.php';
     ?>
+    </header>

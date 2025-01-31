@@ -8,7 +8,9 @@ $title = "Home page!";
 require_once 'components/header.php';
 ?>
 
-<h1>Welcome to my site!</h1>
+<section>
+    <h1>Jack Jefferson</h1>
+</section>
 
 <?php
 require_once 'components/footer.php';
