@@ -91,7 +91,7 @@ CSS for about page banner.
 CSS for the about content
 */
 
-.about-content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;

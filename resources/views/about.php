@@ -15,7 +15,7 @@ require_once 'components/header.php';
     </div>
 </section>
 
-<section class="about-content">
+<section class="content">
     <div class="about-text">
         <p>Hello there! My name is Jack Jefferson. This is my site where you can learn more about who I am, what I do and check out my blogs or recent and past projects I have been working on.</p>
         <p>I currently study Bsc (Hons) Computing at Abertay University and I was also elected as the Department Representative for 2024 to 2025. I enjoy the role as it allows me to engage with the community 

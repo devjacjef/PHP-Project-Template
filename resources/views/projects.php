@@ -21,8 +21,10 @@ if (sizeof($projects) === 0) {
 }
 ?>
 
-<h1>Projects</h1>
-<h2><?php echo $message ?></h2>
+<section class="content">
+    <h1>Projects</h1>
+    <h2><?php echo $message ?></h2>
+</section>
 
 <?php
 require_once 'components/footer.php';
