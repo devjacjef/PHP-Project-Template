@@ -56,11 +56,11 @@ CSS for about page banner.
 
 .about-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/jack_logo_glasses.png");
-    height: 50%;
+    min-height: 50vh;
 
-    background-position: 20%;
+    background-position: 50;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 
     background-color: #e1c6ee;
 
