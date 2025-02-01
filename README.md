@@ -34,3 +34,6 @@ This is the code for my own personal website. I've allowed the code to be public
 - Laravel Directory Structure - https://laravel.com/docs/11.x/structure
 - Laravel Database Documentation - https://laravel.com/docs/11.x/database
 - Singleton Design Pattern - https://refactoring.guru/design-patterns/singleton/php/example
+- Illuminate Docs - https://laravel.com/api/11.x/Illuminate.html
+- Facade Design Pattern - https://refactoring.guru/design-patterns/facade
+- Factory Design Pattern - https://refactoring.guru/design-patterns/factory-method

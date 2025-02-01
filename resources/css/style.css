@@ -68,6 +68,7 @@ CSS for about page banner.
 }
 
 .about-banner-header {
+    font-size: 48px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -91,7 +92,7 @@ CSS for about page banner.
 CSS for the about content
 */
 
-.about-content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +100,7 @@ CSS for the about content
     flex-grow: 1;
 }
 
-.about-text {
+.about {
     text-align: justify;
     width: 50%;
     display: block;

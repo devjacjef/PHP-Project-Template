@@ -8,9 +8,9 @@ $title = "Home page!";
 require_once 'components/header.php';
 
 // TODO Create a cleaner solution.
-require_once __DIR__ . '/../../app/Core/Database.php';
+require_once __DIR__ . '/../../app/Core/Database/Database.php';
 
-use App\Core\Database;
+use App\Core\Database\Database;
 
 $message = '';
 
@@ -21,8 +21,10 @@ if (sizeof($projects) === 0) {
 }
 ?>
 
+<section class="content">
 <h1>Projects</h1>
 <h2><?php echo $message ?></h2>
+</section>
 
 <?php
 require_once 'components/footer.php';
