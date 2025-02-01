@@ -27,8 +27,6 @@ require_once 'components/header.php';
             I will continue to develop this website whilst I develop my career and introduce lots of different little projects that may intergrate with the site or be distributed through my GitHub.
         </p>
     </article>
-    
-
 </section>
 
 <?php

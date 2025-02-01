@@ -21,10 +21,9 @@ if (sizeof($blogs) === 0) {
 }
 ?>
 
-
 <section class="content">
-<h1>Blogs</h1>
-<h2><?php echo $message ?></h2>
+    <h1>Blogs</h1>
+    <h2><?php echo $message ?></h2>
 </section>
 
 
