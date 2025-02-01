@@ -12,7 +12,7 @@ require_once __DIR__ . '/../../../routes/web.php';
         <li><a href="/resume">Resumé</a></li>
     </ul>
     <ul class="social-links">
-        <li><a href="#"><i>LinkedIn</i></a></li>
-        <li><a href="#"><i>GitHub</i></a></li>
+        <li><a href="#"><?php include 'icons/github-icon.php'; ?></a></li>
+        <li><a href="#"><?php include 'icons/linkedin-icon.php'; ?></a></li>
     </ul>
 </nav>
