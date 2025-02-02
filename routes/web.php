@@ -21,6 +21,10 @@ $router->add("/projects", function() {
     return require __DIR__ . '/../resources/views/projects.php';
 });
 
+$router->add("/resume", function() {
+    return require __DIR__ . '/../resources/views/resume.php';
+});
+
 $router->dispatch($path);
 
 // // TODO Research and refactor this snippet of code to better understand what it does...
