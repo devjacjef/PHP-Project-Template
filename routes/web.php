@@ -3,9 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once __DIR__ . '/../app/Routing/Router.php';
-
-use App\Routing\Router;
+use Framework\Routing\Router;
 
 $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
@@ -15,8 +13,12 @@ $router->add("/", function() {
     return require __DIR__ . '/../resources/views/about.php';
 });
 
+$router->add("/blogs", function() {
+    return require __DIR__ . '/../resources/views/blogs.php';
+});
+
 $router->add("/projects", function() {
-    return require __DIR__ . '/../resources/views/about.php';
+    return require __DIR__ . '/../resources/views/projects.php';
 });
 
 $router->dispatch($path);

@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-body,
 html {
-    display: flex;
-    flex-direction: column;
-    background-color: #EEE1C6;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+    height: 100%;
 }
 
 /*
@@ -94,6 +95,8 @@ CSS for the about content
 
 .content {
     display: flex;
+    height: 100%;
+    background-color: #EEE1C6;
     flex-direction: column;
     justify-content: center;
     align-items: center;

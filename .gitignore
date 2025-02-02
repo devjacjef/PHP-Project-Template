@@ -1,3 +1,9 @@
+# secret files...
 /config/config-db.php
 /resources/views/test.php
+
+# composer
+composer.phar
+/vendor/
+
 TODO.md

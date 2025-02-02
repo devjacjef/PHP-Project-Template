@@ -3,9 +3,7 @@
 // Sticking to the whole "not using 3rd party dependencies"
 // All tests are written in Plain PHP.
 
-require_once __DIR__ . '/../app/Core/Database.php';
-
-use App\Core\Database;
+use Framework\Database\Database;
 
 function testDatabaseSingleton() {
     $db1 = Database::getInstance();

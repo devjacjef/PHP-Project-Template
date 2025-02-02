@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Database;
+namespace Framework\Database;
 
 use PDO;
 use PDOException;
@@ -22,7 +22,7 @@ class Database
     private function __construct()
     {
         try {
-            require_once __DIR__ . '/../../../config/config.php';
+            require_once __DIR__ . '/../../config/config.php';
 
             self::$conn = new PDO(
                 $dsn,

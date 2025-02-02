@@ -8,9 +8,8 @@ $title = "Home page!";
 require_once 'components/header.php';
 
 // TODO Create a cleaner solution.
-require_once __DIR__ . '/../../app/Database/Database.php';
 
-use App\Database\Database;
+use Framework\Database\Database;
 
 $message = '';
 
