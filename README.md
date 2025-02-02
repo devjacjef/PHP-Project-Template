@@ -48,3 +48,7 @@ I have taken inspiration from other libraries/frameworks such as Laravel as I lo
 ### Tutorials that really helped
 
 Routes, Routers and Routing in PHP - https://www.youtube.com/watch?v=JycBuHA-glg
+
+## Books that have really helped me
+
+- Pro PHP 8 MVC by Chris Pritt
