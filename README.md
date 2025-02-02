@@ -14,11 +14,12 @@ I have taken inspiration from other libraries/frameworks such as Laravel as I lo
 ## Directory Structure
 
 - `app/` - Core code of the application.
-    - `app/Controllers` - Handles requests and responses.
+    <!-- - `app/Controllers` - Handles requests and responses.
     - `app/Core` - Contains core components for the App.
-    - `app/Models` - Structures data.
+    - `app/Models` - Structures data. -->
 - `config` - configuration files.
 - `docs` - Documentation files.
+- `framework` - My project dependencies.
 - `public` - Web server files.
 - `resources` - Contains views, js scripts and css.
     - `css` - Contains style sheets.
